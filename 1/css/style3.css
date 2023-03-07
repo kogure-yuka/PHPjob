@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 479px) {
+
+ /* 479px以下に適用されるCSS*/
+
+body{
+  width: 200PX;
+}
+
+.wrapper{
+  width: 200px;
+  margin: 0 auto;
+}
+
+.header{
+  display: block;
+  width: 200px;
+  height: 200px;  
+  background-color: #141f40;
+  box-sizing: border-box;
+  padding: 20px 70px 20px 70px;
+}
+
+.container{
+  height: 160px;
+  width: 60px;
+  display: block;
+  background-color: #fff;
+  align-items: center;
+  box-sizing: border-box;
+}
+.box{
+  width: 40px;
+  height: 40px;
+  background-color: #a9004b;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 5px 5px 5px 5px;
+}
+
+.main{
+  width: 200px;
+  height: 310px;
+  display: block;
+}
+
+
+.content{
+    display: block;
+    width: 200px;
+    height: 100px;
+    background-color: #80bfa8;
+}
+
+.side{
+  display: block;
+  width: 200px;
+  height: 210px;
+  background-color: #8c2727;
+  box-sizing: border-box;
+  padding: 10px 30px;
+}
+
+  .container_side{
+    width: 150px;
+    height: 170px;
+  }
+
+  .item{
+    width: 140px;
+    height: 50px;
+    border: solid 5px #fff;
+    background-color: #ff863f;
+    box-sizing: border-box;
+    margin: 10px 0;
+  }
+
+   .footer{
+    width: 200px;
+    height: 100px;  
+    background-color: #d98d30;
+  }
+
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+ }
+}  

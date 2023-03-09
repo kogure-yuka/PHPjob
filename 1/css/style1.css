@@ -58,14 +58,13 @@ body{
   height: 250px;
   background-color: #8c2727;
   box-sizing: border-box;
-  padding: 40px 60px 40px 40px;
+  padding: 30px 60px 40px 40px;
 }
 
 .container_side{
   width: 150px;
   height: 170px;
-  box-sizing: border-box;
-}
+ }
 
   .item{
     width: 150px;
@@ -73,7 +72,7 @@ body{
     border: solid 5px #fff;
     background-color: #ff863f;
     box-sizing: border-box;
-    margin: 10px;
+    margin: 10px 0 0 0;
   }
 
    .footer{

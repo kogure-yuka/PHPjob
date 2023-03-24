@@ -18,6 +18,7 @@ getprice(6,500);
 
 foreach($fruits as $key=>$value){
 
+  
  echo $value."は".$price."円です。";
  echo'<br>';
 }

@@ -1,14 +1,21 @@
+<?php
 
-  <?php
+function getprice($quantity,$unitprice){
+  $price =$quantity * $unitprice;
 
-$quantity=['りんご'=>2,'みかん'=>3,'もも'=>6];
-$price=['りんご'=>150,'みかん'=>50,'もも'=>500];
+  $fruits=["apple"=>"りんご","orange"=>"みかん","peach"=>"もも"];
 
-  foreach($quantity as $key=>$value){
-    $result=$value* $price[$key];
+  foreach($fruits as $key=>$value){
 
-   echo $key."は".$result."円です。";
-   echo'<br>';
-  }
+  echo $value."は".$price."円です。";
+  echo'<br>';
+ 
+}
+}
+
+getprice(2,150);
+getprice(3,50);
+getprice(6,500);
+echo'<br>';
 
 ?>

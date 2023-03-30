@@ -5,19 +5,18 @@ $fruits=["りんご"=>150,"みかん"=>50,"もも"=>500];
 $quantity=[2,3,6];
 
 //単価を計算する関数を定義
-function getprice($count,$price){
+function getprice($quantity,$value){
    //返り値は合計値を返す
-   return $count*$price;
+   return $quantity*$value;
 }
 
-$sum=getprice(2,150);
-   echo 'りんごは'.$sum.'円です。<br>';
+$i = 0 ;
+foreach ( $fruits as $key => $value ){
+   $sum = getprice( $quantity[$i], $value );
+   echo $key.'は'.$sum.'円です。<br>';
+   $i ++ ;  // 次のフルーツの個数をチェックするために、$iをインクリメントしておく。
+}
 
-$sum=getprice(3,50);
-   echo 'みかんは'.$sum.'円です。<br>';
-
-$sum=getprice(6,500);
-   echo 'ももは'.$sum.'円です。<br>';
 
 ?>
 
